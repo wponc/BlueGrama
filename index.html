@@ -4,11 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>Blue Grama</title>
     <link rel="icon" type="image/x-icon" href="dist/images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <img src="dist/images/1.jpg">
-    
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#obj">Objectives</a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#next">Next Steps</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="greeting">Blue Grama</h1>
+    </section>
+
+    <section id="intro">
+        <div class="text">
+            <h1>Context</h1>
+            <h3>Blue Grama <span style="font-style: italic;">Bouteloua gracilis</span>
+            is a warm season turfgrass native to the western United States and Great Plains. 
+            Used primarily for erosion control and forage production, the grass has strong drought
+            tolerance and low-maintenance requirements. It can also tolerate saline and 
+            alkaline soils, and survive at high elevations where other warm season species 
+            would not exist.</h3>
+        </div>
+        <div class="figure">
+            <img src="dist/images/2.jpg">
+        </div>
+    </section>
+
+    <section id="obj">
+        <div class="figure">
+            <img src=""
+        </div>
+        <div class="text" style="width:60vw;">
+            <h1>Project Objectives</h1>
+            <h3>Primarily, this project was conducted to investigate the viability of 
+                Blue grama as a low-mainteneance choice for lawns in the transition zone
+                of the United States. This viability was determined through response of the 
+                grass to selection different post-emerge herbicides, and the manipulaiton of planting
+                application dates.   
+            </h3>
+        </div>
+    </section>
+
+    <section id="setup">
+        <div class="text">
+            <h1>Experimental Design</h1>
+            <h3><ul>
+                <li>Cultivar x 1: Birdseye Blue grama</li>
+                <li>Herbicides x 7: Control (no herbicide), Quicksilver,
+                    Manor, Q4+, Speedzone, Tenacity, Trimec Classic</li>
+                <li>Planting Application Dates x 3: 1, 2, and 3 weeks after emergence</li>
+                <li>Replications x 4</li>
+                <li>Runs x 2</li>
+            </ul> 
+            </h3>
+        </div>
+        <div class="figure">
+            <img src="dist/images/10.jpg">
+        </div>
+    </section>
+
+    <section id="results">
+        <div class="figure">
+            <iframe width="80%" height="45%" frameborder="0" scrolling="no" src="dist/figures/final_growth_heat.html"></iframe><br>
+            <iframe width="80%" height="45%" frameborder="0" scrolling="no" src="dist/figures/net_growth_heat.html"></iframe>
+        </div>
+        <div class="text">
+            <h1>Results</h1>
+            <h2>Overall & Net Growth</h2>
+            <h3>In run 1 (Ava), only control and CR (carfentrazone) witnessed consistent growth throughout the entire timeframe for 
+                all three planting application dates. For run 2 (Will), none of the treatments saw consistent growth throughout the entirety of the timeframe
+                for all three planting dates. For both runs, growth was not consistent in treatments other than control or quicksilver. 
+            </h3>
+        </div>
+    </section>
+
+    <section>
+        <div class="text">
+            <h2>Growth Timeseries</h2>
+            <h3>Planting date seemed to have a noticeable effect on leaf height throughout the timeframe. Notably, herbicide application 1 week after emergence
+            led to more varied results in final leaf height as compared to application 2 or 3 weeks after emergence. </h3>
+        </div>
+        <div class="figure">
+            <iframe width="90%" height="80%" frameborder="0" scrolling="no" src="dist/figures/scatter_anim.html"></iframe>
+        </div>
+    </section>
+
+    <section>
+        <div class="figure">
+            <iframe width="80%" height="85%" frameborder="0" scrolling="no" src="dist/figures/injury_by_ingredients.html"></iframe>
+        </div>
+        <div class="text">
+            <h2>Percent Injury</h2>
+            <h3>For both runs, CR and MN both had the lowest percent injury rating when averaged across all 3 planting application
+                dates. These treatments both only have a single active ingredient, carfentratzone and metasulfuron respectively. 
+                While TN similarly has only a single active ingredient (mesotrione), it had the highest average percent injury across 
+                all 3 planting application dates in both run 1 and 2. 
+            </h3>
+        </div>
+    </section>
+
+    <section>
+        <div class="text">
+            <h2>Leaf Count</h2>
+            <h3>While run 1 witnessed an increase in leaf count throughout the 21
+                days for all three weeks, run 2 had more varied results. Namely,
+                there were decreases (TN 1WPE & Q4 2 WPE), as well as some counts 
+                that remained constant (Q4 1 WPE & CN 3 WPE).</h3>
+        </div>
+        <div class="figure">
+            <img src="dist/figures/stacked_leaf_count.png" style="width:90%;">
+        </div>
+    </section>
+
+    <section>
+        <div class="figure">
+            <iframe width="80%" height="85%" frameborder="0" scrolling="no" src="dist/figures/tillers.html"></iframe>
+        </div>
+        <div class="text">
+            <h2>Tiller Counts</h2>
+            <h3>Tiller counts appeared to be more varied between runs 1 and 2 than the other metrics, though MN had the highest overall tiller count in both runs.
+                Run 1 witnessed a decrease in tiller counts for both control and TR, while run 2 wintessed a drop in slope of tiller counts for control. 
+            </h3>
+        </div>
+    </section>
+
+    <section id="next">
+        <div class="figure">
+            <img src="dist/images/4.jpg">
+        </div>
+        <div class="text">
+            <h2>Conclusions & Next Steps</h2>
+            <h3>Overall, Quicksilver (CR) and Manor (MN) jumped out as the best herbicides to apply for BG health. Both of these treatments had solid overall and net growth. Dependent upon lawn height
+                preferences in the region, this may make them the ideal choice. Quicksilver and Manor also had the two lowest average percent injury ratings across the 3 planting application dates. MN
+                also had the highest tiller count across both runs, a strong indicator of overall plant health and future growth. Next steps for a project like this could be to dive deeper into the 
+                relationship between number of active ingredients and growth over time. 
+            </h3>
+        </div>
+    </section>
+
+    <canvas id="bg"></canvas>
+    <script defer type="module" src="index.js"></script>
 </body>
 </html>
