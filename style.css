@@ -5,6 +5,7 @@ canvas {
     height:100vh;
     width: 100vw;
     z-index: -99;
+    background-color: rgb(245,245,245);
   }
 
 body{
@@ -22,6 +23,7 @@ nav{
     padding-left: .25em;
     padding-top: .05em;
     z-index: 98;
+    background-color: rgb(245,245,245);
 }
 ul{
     display: flex;
@@ -38,7 +40,7 @@ li {
 a{
     text-decoration: none;
     font-family: 'Open-Sans', sans-serif;
-    background-image: url(https://64.media.tumblr.com/5d7ab997c9daa879a320f9ef21e895b7/tumblr_ooeddrvOJE1uzwgsuo1_400.gif);
+    background-image: url(https://64.media.tumblr.com/83c7ef126ce3e25a4dd1c34e33d0139c/1aaaad6ff2bec4be-57/s400x600/143b0afbbf62c43aef8dcd45b11994b080e158da.gif);
     text-transform: none;
     background-size: auto auto;
     background-clip: border-box;
@@ -64,6 +66,13 @@ section{
     display: flex;
     gap: 2%;
 }
+img{
+    padding: .2em;
+    transition: all 1s;
+    border-radius: 4%;
+    border: .7em solid #ddd;
+    border-image: url(https://64.media.tumblr.com/83c7ef126ce3e25a4dd1c34e33d0139c/1aaaad6ff2bec4be-57/s400x600/143b0afbbf62c43aef8dcd45b11994b080e158da.gif) 30;
+}
 .section.show{
     animation: fadeIn 1s ease-in-out;
     opacity: 1;
@@ -71,14 +80,16 @@ section{
   
 
 .greeting{
-    background-image: url(https://github.com/wponc/Scraps/blob/master/assets/images/37.jpg?raw=true);
+    background-image: url(https://github.com/wponc/BlueGrama/blob/main/dist/images/2.jpg?raw=true);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-size: 40%;
     font-weight: bold;
-    font-size: 21em;
+    font-size: 16em;
     user-select: none;
-    letter-spacing: .1em;
+    width:90%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1{
     font-size: 2.25em;
@@ -93,7 +104,6 @@ h1{
 }
 .figure img{
     height: 80%;
-    padding-left: 5%;
 }
 
     /* Firefox */
